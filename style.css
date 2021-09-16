@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 span.navbar-toggler-icon {
   border: none !important;
@@ -14,6 +16,16 @@ span.navbar-toggler-icon {
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
   border-color: rgba(0, 0, 0, 0);
+}
+li.nav-item {
+  padding: 0 5px;
+}
+a.nav-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #00396e !important;
+  font-weight: 600;
+  opacity: 0.8;
 }
 .banner {
   background-image: url(banner.jpg);
@@ -31,25 +43,25 @@ span.navbar-toggler-icon {
 }
 .text-box {
   background: rgba(168, 168, 168, 0.6);
-  flex-basis: 45%;
+  flex-basis: 50%;
   height: 85vh;
   margin-top: -46px;
 }
 .inner-text {
   position: absolute;
-  top: 10%;
-  left: 50%;
-  right: 19%;
+  padding: 0 100px;
+  top: 76px;
+  width: 50%;
 }
 .text-box h4 {
-  font-size: 4.5rem;
-  font-weight: 400;
+  font-size: 4rem;
+  font-weight: 300;
   color: #fff;
 }
 .text-box p {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .text-box a:hover {
@@ -63,7 +75,7 @@ span.navbar-toggler-icon {
   border: 1px solid #2e4053;
   font-size: 20px;
   padding: 13px 34px;
-  background: rgba(46, 64, 83, 1);
+  background: #00396e;
   position: relative;
   cursor: pointer;
   font-weight: 500;
@@ -93,10 +105,10 @@ span.navbar-toggler-icon {
   text-align: center;
   transition: all 0.7s ease;
 }
-.social-icon ul li a:hover {
+/* .social-icon ul li a:hover {
   background-color: #222;
   color: rgba(202, 207, 210, 0.6);
-}
+} */
 
 .social-icon ul li a .fa {
   font-size: 30px;
@@ -279,9 +291,44 @@ hr {
 @media (max-width: 1800px) {
 }
 @media (max-width: 1480px) {
-  .advisor h1 {
-    font-size: 4rem;
+  a.nav-link {
+    font-size: 16px;
   }
+  .text-box {
+    margin-top: -31px;
+  }
+  .inner-text {
+    padding: 0 60px;
+    top: 76px;
+    width: 45%;
+  }
+
+  .text-box h4 {
+    font-size: 3rem;
+  }
+  .text-box p {
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+  .hero-btn {
+    font-size: 14px;
+    padding: 10px 10px;
+  }
+  .social-icon ul {
+    top: 20%;
+  }
+  .social-icon ul li a {
+    height: 48px;
+    width: 48px;
+  }
+  .social-icon ul li a .fa {
+    font-size: 20px;
+    line-height: 48px;
+  }
+  .advisor h1 {
+    font-size: 3rem;
+  }
+
   .advisor h4.p-1 {
     font-size: 20px;
     letter-spacing: 4px;
@@ -334,15 +381,32 @@ hr {
   }
 }
 
-@media (max-width: 1205px) {
+@media (max-width: 1280px) {
+  li.nav-item {
+    padding: 0 0px;
+  }
+  a.nav-link {
+    font-size: 14px;
+  }
+  .text-box {
+    flex-basis: 60%;
+  }
+  .inner-text {
+    padding: 0 70px;
+    top: 76px;
+    width: 55%;
+  }
+  .text-box {
+    margin-top: -30px;
+  }
   .advisor h1 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   h5.text-center.p-5 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   .pdf h5 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
   .advisor p {
     width: 100%;
@@ -363,18 +427,59 @@ hr {
     width: 100%;
   }
 }
+@media (max-width: 1050px) {
+  .text-box {
+    margin-top: -65px;
+  }
+  .social-icon {
+    flex-basis: 12%;
+  }
+  .text-box {
+    flex-basis: 58%;
+  }
+  .inner-text {
+    padding: 0 20px;
+    top: 76px;
+    width: 57%;
+  }
+  .advantage .p-5 {
+    padding: 3rem 0 !important;
+  }
+}
 @media (max-width: 900px) {
+  .text-box h4 {
+    font-size: 2.7rem;
+  }
+  .text-box p {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+  .hero-btn {
+    font-size: 12px;
+    padding: 10px 10px;
+  }
+  .social-icon ul li a {
+    height: 40px;
+    width: 40px;
+  }
+  .social-icon ul li a .fa {
+    font-size: 16px;
+    line-height: 40px;
+  }
   .advisor.p-5 {
     padding: 5rem 0 !important;
   }
   .advisor h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h5.text-center.p-5 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .pdf h5 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .advantage .p-5 {
+    padding: 2rem 0 !important;
   }
   .card.h-100 {
     padding: 1rem 0;
@@ -401,7 +506,29 @@ hr {
     opacity: 0.6;
   }
 }
+@media (max-width: 768px) {
+  .text-box {
+    margin-top: -50px;
+  }
+}
 @media (max-width: 767px) {
+  .text-box {
+    background: rgba(168, 168, 168, 0.6);
+    flex-basis: 70%;
+    height: 80vh;
+    margin-top: 0;
+  }
+  .social-icon {
+    flex-basis: 16%;
+  }
+  .inner-text {
+    padding: 0 10px;
+    top: 76px;
+    width: 70%;
+  }
+  .social-icon ul {
+    padding-left: 2rem !important;
+  }
   .advantage .p-5 {
     padding: 2rem !important;
   }
@@ -415,10 +542,7 @@ hr {
   .btn {
     font-size: 15px;
   }
-  ol,
-  ul {
-    padding-left: 0rem !important;
-  }
+
   .foo-nav a {
     padding: 0px 15px;
     font-size: 19px;
@@ -443,11 +567,56 @@ hr {
     font-size: 18px;
     line-height: 45px;
   }
+  footer ol,
+  ul {
+    padding-left: 0rem !important;
+  }
 }
 @media (max-width: 767px) {
   .foo-icon ul li {
     list-style: none;
     display: inline-block;
     padding: 0 5px;
+  }
+}
+@media (max-width: 610px) {
+  .text-box {
+    flex-basis: 75%;
+  }
+  .text-box h4 {
+    font-size: 2.5rem;
+  }
+  .inner-text {
+    width: 75%;
+  }
+}
+@media (max-width: 560px) {
+  .text-box h4 {
+    font-size: 2rem;
+  }
+  .social-icon ul {
+    padding-left: 1rem !important;
+  }
+}
+@media (max-width: 460px) {
+  .text-box {
+    flex-basis: 81%;
+  }
+  .inner-text {
+    width: 81%;
+  }
+  .text-box h4 {
+    font-size: 1.5rem;
+  }
+  .hero-btn {
+    font-size: 10px;
+    padding: 10px 10px;
+  }
+  .social-icon {
+    flex-basis: 19%;
+  }
+  .inner-text {
+    padding: 0 10px;
+    top: 80px;
   }
 }
