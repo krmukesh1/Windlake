@@ -9,10 +9,12 @@ div#navbarSupportedContent {
 }
 div#navbarSupportedContent hr {
   margin: 0rem 0;
+  width: 90%;
+  color: #00396e;
 }
 .htop {
   position: relative;
-  left: 8%;
+  left: 15%;
 }
 span.navbar-toggler-icon {
   border: none !important;
@@ -424,6 +426,9 @@ hr {
 @media (max-width: 1480px) {
   a.nav-link {
     font-size: 16px;
+  }
+  .htop a.nav-link {
+    font-size: 12px;
   }
   .text-box {
     margin-top: -31px;
