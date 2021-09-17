@@ -31,7 +31,7 @@ a.nav-link {
   opacity: 0.8;
 }
 .banner {
-  background-image: url(banner.jpg);
+  background-image: url(./images/banner.jpg);
   height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -436,7 +436,7 @@ hr {
   /* footer */
   .foo-nav a {
     padding: 10px 20px;
-    font-size: 22px;
+    font-size: 20px;
   }
   .copyright .py-4 {
     width: 82%;
