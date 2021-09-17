@@ -175,16 +175,12 @@
     <!-- testimonials -->
     <section class="testimonial-section d-flex align-items-center">
       <div class="container">
+        <h4 class="display-5 text-center p-3">Testimonials</h4>
+        <p class="lead">
+          Read what our successful clients have to say about windlake.
+        </p>
         <div class="row align-items-center">
-          <div class="col-md-6 testi-img">
-            <div class="img-box">
-              <div class="circle"></div>
-              <div class="img-box-inner">
-                <img src="img/testimonial/1.png" alt="testi img" />
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
+          <div class="col">
             <div
               id="myCarousel"
               class="carousel slide"
@@ -195,43 +191,74 @@
                 <div
                   class="carousel-item testi-item active"
                   data-color="#fb9c9a"
-                  data-img="img/testimonial/1.png"
                 >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                    nobis ratione, harum doloremque aspernatur aliquid quaerat
-                    dolores voluptates recusandae qui repellat illum, amet ipsa
-                    debitis fugiat commodi nemo suscipit ad!
-                  </p>
-                  <h3>john doe 1 - <span>web developer</span></h3>
+                  <div class="test-img">
+                    <div class="img-box-inner">
+                      <img src="./images/test.png" alt="testi img" />
+
+                      <div class="test-content">
+                        <h3>J. SHERMAN HENDERSON III</h3>
+                        <hr />
+                        <h4>Founder CEO, The Derby Agency, LLC</h4>
+                        <p>
+                          “I’ve worked professionally with Brian Gross on a
+                          number of complex M&A transactions through the years.
+                          He quickly gains the trust and respect of his clients.
+                          He has a methodical, constructive, intelligent,
+                          creative and very professional approach to the
+                          business side of selling a business. He always adds
+                          tremendous value.”
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="carousel-item testi-item"
-                  data-color="#fbd39a"
-                  data-img="img/testimonial/2.png"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                    nobis ratione, harum doloremque aspernatur aliquid quaerat
-                    dolores voluptates recusandae qui repellat illum, amet ipsa
-                    debitis fugiat commodi nemo suscipit ad!
-                  </p>
-                  <h3>john doe 2 - <span>web developer</span></h3>
+                <div class="carousel-item testi-item" data-color="#fb9c9a">
+                  <div class="test-img">
+                    <div class="img-box-inner">
+                      <img src="images/test.png" alt="testi img" />
+
+                      <div class="test-content">
+                        <h3>J. SHERMAN HENDERSON III</h3>
+                        <hr />
+                        <h4>Founder CEO, The Derby Agency, LLC</h4>
+                        <p>
+                          “I’ve worked professionally with Brian Gross on a
+                          number of complex M&A transactions through the years.
+                          He quickly gains the trust and respect of his clients.
+                          He has a methodical, constructive, intelligent,
+                          creative and very professional approach to the
+                          business side of selling a business. He always adds
+                          tremendous value.”
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="carousel-item testi-item"
-                  data-color="#9ab0fb"
-                  data-img="img/testimonial/3.png"
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                    nobis ratione, harum doloremque aspernatur aliquid quaerat
-                    dolores voluptates recusandae qui repellat illum, amet ipsa
-                    debitis fugiat commodi nemo suscipit ad!
-                  </p>
-                  <h3>john doe 3 - <span>web developer</span></h3>
+                <div class="carousel-item testi-item" data-color="#fb9c9a">
+                  <div class="test-img">
+                    <div class="img-box-inner">
+                      <img src="images/test.png" alt="testi img" />
+
+                      <div class="test-content">
+                        <h3>J. SHERMAN HENDERSON III</h3>
+                        <hr />
+                        <h4>Founder CEO, The Derby Agency, LLC</h4>
+                        <p>
+                          “I’ve worked professionally with Brian Gross on a
+                          number of complex M&A transactions through the years.
+                          He quickly gains the trust and respect of his clients.
+                          He has a methodical, constructive, intelligent,
+                          creative and very professional approach to the
+                          business side of selling a business. He always adds
+                          tremendous value.”
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+
               <button
                 class="carousel-control-prev"
                 type="button"
@@ -346,10 +373,6 @@
       const myCarousel = document.getElementById("myCarousel");
       myCarousel.addEventListener("slid.bs.carousel", function () {
         const activeItem = this.querySelector(".active");
-        document.querySelector(".testi-img img").src =
-          activeItem.getAttribute("data-img");
-        document.querySelector(".testi-img .circle").style.backgroundColor =
-          activeItem.getAttribute("data-color");
       });
     </script>
   </body>
