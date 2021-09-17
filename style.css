@@ -141,19 +141,31 @@ a.nav-link {
 }
 img.traingle.p-3 {
   max-width: 50px;
-}
-a img.traingle:before,
-a img.traingle:after {
-  content: "";
-  display: inline-block;
-  width: 100px;
-  height: 2px;
-  background: #000;
-  vertical-align: middle;
-  margin-left: 16px;
-  margin-right: 16px;
+  position: relative;
 }
 
+.mu {
+  position: relative;
+}
+.mu::before,
+.mu::after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.mu::before {
+  top: 55%;
+  left: 40%;
+}
+.mu::after {
+  top: 55%;
+  right: 40%;
+}
 .advisor .hero-btn {
   background: transparent;
   border-color: #fff;
