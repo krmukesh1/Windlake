@@ -107,10 +107,6 @@ a.nav-link {
   text-align: center;
   transition: all 0.7s ease;
 }
-/* .social-icon ul li a:hover {
-  background-color: #222;
-  color: rgba(202, 207, 210, 0.6);
-} */
 
 .social-icon ul li a .fa {
   font-size: 30px;
@@ -274,7 +270,11 @@ small {
 
 /* pdf */
 .pdf {
-  background: #eaebec;
+  background: linear-gradient(
+      rgba(236, 240, 241, 0.7),
+      rgba(236, 240, 241, 0.7)
+    ),
+    url(./images/windlake-pdf_bg.png);
   padding: 5rem;
 }
 .pdf h5 {
