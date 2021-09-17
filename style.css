@@ -156,14 +156,13 @@ img.traingle.p-3 {
   background: #fff;
   position: absolute;
   opacity: 0.5;
+  top: 55%;
 }
 
 .mu::before {
-  top: 55%;
   left: 40%;
 }
 .mu::after {
-  top: 55%;
   right: 40%;
 }
 .advisor .hero-btn {
@@ -528,6 +527,12 @@ hr {
   .testi-img .img-box-inner img {
     max-width: 230px;
   }
+  .mu::before {
+    left: 37%;
+  }
+  .mu::after {
+    right: 37%;
+  }
 }
 @media (max-width: 900px) {
   .banner {
@@ -558,6 +563,12 @@ hr {
   }
   .advisor h1 {
     font-size: 2.5rem;
+  }
+  .mu::before {
+    left: 35%;
+  }
+  .mu::after {
+    right: 35%;
   }
   h5.text-center.p-5 {
     font-size: 2.5rem;
@@ -596,6 +607,12 @@ hr {
 @media (max-width: 768px) {
   .text-box {
     margin-top: -50px;
+  }
+  .mu::before {
+    left: 30%;
+  }
+  .mu::after {
+    right: 30%;
   }
 }
 @media (max-width: 767px) {
@@ -678,6 +695,12 @@ hr {
   .inner-text {
     width: 75%;
   }
+  .mu::before {
+    left: 25%;
+  }
+  .mu::after {
+    right: 25%;
+  }
 }
 @media (max-width: 560px) {
   .text-box h4 {
@@ -706,6 +729,12 @@ hr {
   }
   .inner-text {
     padding: 0 10px;
-    top: 80px;
+    top: 150px;
+  }
+  .mu::before {
+    left: 20%;
+  }
+  .mu::after {
+    right: 20%;
   }
 }
