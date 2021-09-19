@@ -67,8 +67,8 @@ a.nav-link {
 .text-box {
   background: rgba(168, 168, 168, 0.6);
   flex-basis: 42%;
-  height: 75vh;
-  margin-top: -30px;
+  height: 73vh;
+  margin-top: -28px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3));
 }
 .inner-text {
@@ -568,7 +568,7 @@ hr {
     width: 55%;
   }
   .text-box {
-    margin-top: -30px;
+    margin-top: -35px;
   }
   .advisor h1 {
     font-size: 3.3rem;
