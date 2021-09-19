@@ -8,7 +8,7 @@ div#navbarSupportedContent {
   flex-direction: column;
 }
 div#navbarSupportedContent hr {
-  margin: 0rem 0;
+  margin: 0.5rem 0;
   width: 86%;
   opacity: 0.1;
   color: #00396e;
@@ -433,12 +433,18 @@ hr {
 }
 
 @media (max-width: 1700px) {
+  div#navbarSupportedContent hr {
+    margin: 0.2rem 0;
+    width: 86%;
+    opacity: 0.1;
+    color: #00396e;
+  }
   .htop {
     position: relative;
-    left: 12%;
+    left: 8%;
   }
   div#navbarSupportedContent hr {
-    width: 75%;
+    width: 88%;
   }
   a.navbar-brand img {
     width: 100px;
@@ -540,10 +546,10 @@ hr {
 @media (max-width: 1280px) {
   .htop {
     position: relative;
-    left: 8%;
+    left: 1%;
   }
   div#navbarSupportedContent hr {
-    width: 74%;
+    width: 90%;
   }
   li.nav-item {
     padding: 0 0px;
@@ -610,7 +616,7 @@ hr {
 @media (max-width: 1050px) {
   .htop {
     position: relative;
-    left: 10%;
+    left: 2%;
   }
   div#navbarSupportedContent hr {
     width: 90%;
