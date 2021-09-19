@@ -9,12 +9,13 @@ div#navbarSupportedContent {
 }
 div#navbarSupportedContent hr {
   margin: 0rem 0;
-  width: 90%;
+  width: 86%;
+  opacity: 0.1;
   color: #00396e;
 }
 .htop {
   position: relative;
-  left: 15%;
+  left: 8%;
 }
 span.navbar-toggler-icon {
   border: none !important;
@@ -29,8 +30,13 @@ span.navbar-toggler-icon {
   color: rgba(0, 0, 0, 0.55);
   border-color: rgba(0, 0, 0, 0);
 }
-a.navbar-brand img {
-  max-width: 120px;
+i.fa.fa-map-marker {
+  font-size: 24px;
+  margin-right: 10px;
+}
+i.fa.fa-phone {
+  font-size: 24px;
+  margin-right: 10px;
 }
 li.nav-item {
   padding: 0 5px;
@@ -39,12 +45,16 @@ a.nav-link {
   font-size: 18px;
   text-transform: uppercase;
   color: #00396e !important;
-  font-weight: 600;
+  font-weight: 700;
   opacity: 0.8;
+}
+.htop a.nav-link {
+  font-size: 17px;
+  font-weight: 500;
 }
 .banner {
   background-image: url(./images/banner.jpg);
-  height: 80vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -56,8 +66,8 @@ a.nav-link {
 }
 .text-box {
   background: rgba(168, 168, 168, 0.6);
-  flex-basis: 50%;
-  height: 85vh;
+  flex-basis: 42%;
+  height: 75vh;
   margin-top: -46px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3));
 }
@@ -65,7 +75,7 @@ a.nav-link {
   position: absolute;
   padding: 0 100px;
   top: 76px;
-  width: 50%;
+  width: 42%;
 }
 .text-box h4 {
   font-size: 4rem;
@@ -421,17 +431,26 @@ footer.p-5 {
 hr {
   margin: 2rem 0;
 }
-@media (max-width: 1800px) {
-}
-@media (max-width: 1480px) {
+
+@media (max-width: 1700px) {
+  .htop {
+    position: relative;
+    left: 12%;
+  }
+  div#navbarSupportedContent hr {
+    width: 75%;
+  }
+  a.navbar-brand img {
+    width: 100px;
+  }
   a.nav-link {
     font-size: 16px;
   }
   .htop a.nav-link {
-    font-size: 12px;
+    font-size: 15px;
   }
   .text-box {
-    margin-top: -31px;
+    margin-top: -30px;
     flex-basis: 40%;
   }
   .inner-text {
@@ -519,6 +538,13 @@ hr {
 }
 
 @media (max-width: 1280px) {
+  .htop {
+    position: relative;
+    left: 8%;
+  }
+  div#navbarSupportedContent hr {
+    width: 74%;
+  }
   li.nav-item {
     padding: 0 0px;
   }
@@ -582,6 +608,13 @@ hr {
   }
 }
 @media (max-width: 1050px) {
+  .htop {
+    position: relative;
+    left: 10%;
+  }
+  div#navbarSupportedContent hr {
+    width: 90%;
+  }
   .social-icon {
     flex-basis: 12%;
   }
@@ -630,7 +663,8 @@ hr {
 }
 @media (max-width: 900px) {
   .htop {
-    left: 0;
+    position: relative;
+    left: 0% !important;
   }
   .banner {
     background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
@@ -715,7 +749,7 @@ hr {
 @media (max-width: 767px) {
   .text-box {
     flex-basis: 70%;
-    height: 80vh;
+    height: 70vh;
     margin-top: 0;
   }
   .social-icon {
