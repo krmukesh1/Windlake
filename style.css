@@ -68,7 +68,7 @@ a.nav-link {
   background: rgba(168, 168, 168, 0.6);
   flex-basis: 42%;
   height: 75vh;
-  margin-top: -46px;
+  margin-top: -30px;
   background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3));
 }
 .inner-text {
@@ -434,8 +434,8 @@ hr {
 
 @media (max-width: 1700px) {
   div#navbarSupportedContent hr {
-    margin: 0.2rem 0;
-    width: 86%;
+    margin: 0.5rem 0;
+    width: 92%;
     opacity: 0.1;
     color: #00396e;
   }
@@ -443,12 +443,7 @@ hr {
     position: relative;
     left: 8%;
   }
-  div#navbarSupportedContent hr {
-    width: 88%;
-  }
-  a.navbar-brand img {
-    width: 100px;
-  }
+
   a.nav-link {
     font-size: 16px;
   }
@@ -456,9 +451,11 @@ hr {
     font-size: 15px;
   }
   .text-box {
-    margin-top: -30px;
+    margin-top: -24px;
     flex-basis: 40%;
+    height: 74vh;
   }
+
   .inner-text {
     padding: 0 40px;
     top: 76px;
@@ -544,12 +541,17 @@ hr {
 }
 
 @media (max-width: 1280px) {
+  a.navbar-brand img {
+    width: 100px;
+  }
+
   .htop {
     position: relative;
     left: 1%;
   }
   div#navbarSupportedContent hr {
     width: 90%;
+    margin: 0rem 0;
   }
   li.nav-item {
     padding: 0 0px;
