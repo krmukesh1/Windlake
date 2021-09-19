@@ -616,6 +616,14 @@ hr {
   }
 }
 @media (max-width: 1050px) {
+  .text-box {
+    margin-top: -24px;
+    flex-basis: 40%;
+    height: 72vh;
+  }
+  .text-box {
+    margin-top: -25px;
+  }
   .htop {
     position: relative;
     left: 2%;
@@ -746,6 +754,7 @@ hr {
 @media (max-width: 768px) {
   .text-box {
     margin-top: -50px;
+    height: 75vh;
   }
   .mu::before {
     left: 30%;
